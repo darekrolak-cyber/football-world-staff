@@ -1,1 +1,475 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Football World Antalya — Admin</title><style>:root{--navy:#102f50;--navy2:#173d63;--bg:#f4f7fa;--border:#dbe4ec;--muted:#66778a;--free:#dff5e3;--freeText:#176b2d;--booked:#ffe0e0;--bookedText:#8b1e1e}*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:var(--bg);color:#162337}.header{background:linear-gradient(90deg,var(--navy),var(--navy2));color:#fff;padding:18px 24px;display:flex;justify-content:space-between;gap:20px;align-items:center}.brand{display:flex;gap:12px;align-items:center}.brand h1{margin:0;font-size:24px}.brand p{margin:4px 0 0;opacity:.8;font-size:13px}.ball{font-size:34px}.actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.badge{background:#fff;color:var(--navy);padding:9px 14px;border-radius:999px;font-weight:700;font-size:13px}.lang button{border:1px solid #ffffff77;background:transparent;color:#fff;padding:9px 12px;border-radius:8px}.lang button.active{background:#fff;color:var(--navy)}.wrap{max-width:1500px;margin:auto;padding:18px}.toolbar{display:flex;gap:9px;align-items:center;flex-wrap:wrap;margin-bottom:14px}input,button,select{font:inherit;border:1px solid var(--border);border-radius:8px;background:#fff;padding:10px 12px;min-height:42px}button{cursor:pointer;color:var(--navy);font-weight:700}.mode{display:flex;gap:6px;flex-wrap:wrap}.mode button.active{background:var(--navy);color:#fff}.legend{margin-left:auto;display:flex;gap:15px;font-size:12px;color:var(--muted)}.dot{width:14px;height:14px;border-radius:4px;display:inline-block;vertical-align:middle;margin-right:5px}.card{background:#fff;border:1px solid var(--border);border-radius:13px;box-shadow:0 4px 18px rgba(16,47,80,.05);padding:12px;margin-bottom:14px}.scroller{overflow:auto;-webkit-overflow-scrolling:touch}.sectionTitle{font-size:18px;color:var(--navy);margin:0 0 10px}.table{width:100%;border-collapse:collapse}.table th,.table td{padding:9px;border-bottom:1px solid var(--border);font-size:12px;text-align:left}.table th{background:#eef3f7;color:var(--navy)}table.schedule{width:100%;min-width:1000px;border-collapse:separate;border-spacing:4px}.schedule th{background:#eaf0f5;color:var(--navy);padding:11px;font-size:12px;border-radius:7px}.schedule thead th:not(:first-child){background:var(--navy);color:#fff}.schedule td{height:58px;padding:7px;text-align:center;border-radius:8px;font-size:12px}.free{background:var(--free);color:var(--freeText)}.booked{background:var(--booked);color:var(--bookedText)}.schedule td strong,.schedule td span{display:block}.schedule td span{font-size:10px;margin-top:4px}.monthGrid{display:grid;grid-template-columns:repeat(7,minmax(150px,1fr));gap:8px;min-width:1080px}.monthHead{font-size:12px;font-weight:700;color:var(--navy);background:#eaf0f5;padding:9px;border-radius:7px;text-align:center}.dayCell{min-height:150px;border:1px solid var(--border);border-radius:10px;padding:8px;background:#fff;cursor:pointer}.dayCell.out{opacity:.35}.dayNum{font-weight:700;color:var(--navy);margin-bottom:7px;display:flex;align-items:baseline;gap:6px}.dayNum .num{font-size:20px}.dayNum .mon{font-size:11px;color:var(--muted);text-transform:uppercase}.dayStat{font-size:11px;margin:3px 0}.dayClubs{display:flex;flex-direction:column;gap:4px;margin-top:6px}.dayTag{background:#f8dada;color:var(--bookedText);border:1px solid #efc7c7;border-radius:8px;padding:5px 6px;font-size:10px;line-height:1.25}.dayTag strong,.dayTag span{display:block}.dayTag span{color:#6f2d2d;margin-top:1px}.dayFree{font-size:11px;color:var(--freeText);font-weight:700;margin-top:6px}.teamTop{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:12px}.teamStats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-bottom:12px}.teamStat{background:#eef3f7;border-radius:10px;padding:10px}.teamStat span{display:block;font-size:10px;color:var(--muted)}.teamStat strong{font-size:18px;color:var(--navy)}.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:14px 0}.kpi{background:#fff;border:1px solid var(--border);border-radius:12px;padding:14px}.kpi span{display:block;font-size:11px;color:var(--muted);margin-bottom:5px}.kpi strong{font-size:24px;color:var(--navy)}.grid2{display:grid;grid-template-columns:1.2fr .8fr;gap:14px}.paid{color:#176b2d;font-weight:700}.due{color:#8b1e1e;font-weight:700}.small{font-size:11px;color:var(--muted)}.mobileDay{display:none}.mSlot{background:#fff;border:1px solid var(--border);border-radius:12px;padding:10px;margin-bottom:10px}.mSlotTitle{font-weight:700;color:var(--navy);margin-bottom:8px}.mRows{display:grid;grid-template-columns:1fr 1fr;gap:7px}.mPitch{border-radius:8px;padding:8px;font-size:12px;min-height:55px}.mPitch strong,.mPitch span{display:block}.mPitch span{font-size:10px;margin-top:3px}@media(max-width:1000px){.wrap{padding:14px}.brand h1{font-size:21px}.toolbar{align-items:stretch}.legend{margin-left:0}.teamStats,.kpis{grid-template-columns:1fr 1fr}.grid2{grid-template-columns:1fr}.monthGrid{grid-template-columns:repeat(7,minmax(135px,1fr));min-width:980px}.table th,.table td{padding:10px;font-size:13px}}@media(max-width:640px){.header{padding:14px;align-items:flex-start;flex-direction:column}.brand{align-items:flex-start}.ball{font-size:28px}.brand h1{font-size:19px}.brand p{font-size:12px}.actions{width:100%;justify-content:space-between}.badge{font-size:11px;padding:8px 10px}.wrap{padding:10px}.toolbar{display:grid;grid-template-columns:1fr auto auto;gap:8px}.mode{grid-column:1/-1;display:grid;grid-template-columns:repeat(3,1fr)}.mode button{width:100%}#date{width:100%;min-width:0}.legend{grid-column:1/-1;justify-content:flex-start}.desktopSchedule{display:none}.mobileDay{display:block}.mRows{grid-template-columns:1fr}.sectionTitle{font-size:17px}.table{min-width:0}.table thead{display:none}.table tbody,.table tr,.table td{display:block;width:100%}.table tr{border:1px solid var(--border);border-radius:10px;margin-bottom:8px;padding:8px;background:#fff}.table td{border:0;padding:4px 2px;font-size:12px}.table td:before{content:attr(data-label);font-weight:700;color:var(--muted);display:inline-block;min-width:115px}.teamStats,.kpis{grid-template-columns:1fr}.teamTop{display:block}.teamTop select{width:100%;margin-top:8px}.monthGrid{grid-template-columns:1fr;min-width:0}.monthHead{display:none}.dayCell.out{display:none}.dayCell{min-height:0}.dayClubs{gap:6px}.dayTag{font-size:12px;padding:8px}.dayTag span{font-size:11px}.card{padding:10px}.kpi strong{font-size:22px}}@media(orientation:landscape) and (max-width:900px){.desktopSchedule{display:block}.mobileDay{display:none}}</style></head><body><div class="header"><div class="brand"><div class="ball">⚽</div><div><h1>FOOTBALL WORLD ANTALYA</h1><p id="seasonText">Admin dashboard · 10 Dec 2026 – 30 Apr 2027</p></div></div><div class="actions"><div class="lang"><button id="enBtn" class="active" onclick="setLang('en')">EN</button><button id="plBtn" onclick="setLang('pl')">PL</button></div><div class="badge" id="badge">ADMIN · FINANCE + BOOKINGS</div></div></div><div class="wrap"><div class="toolbar"><div class="mode"><button id="dayBtn" class="active" onclick="setMode('day')">Day</button><button id="monthBtn" onclick="setMode('month')">Month</button><button id="teamsBtn" onclick="setMode('teams')">Teams</button></div><button id="prevBtn" onclick="move(-1)">←</button><input id="date" type="date" min="2026-12-10" max="2027-04-30" value="2027-01-20" onchange="render()"><button id="nextBtn" onclick="move(1)">→</button><div class="legend"><span><i class="dot" style="background:var(--free)"></i><span id="freeLegend">Available</span></span><span><i class="dot" style="background:var(--booked)"></i><span id="bookedLegend">Booked</span></span></div></div><div id="dayView"><div class="card desktopSchedule"><div class="scroller"><table class="schedule" id="schedule"></table></div></div><div class="mobileDay" id="mobileDay"></div></div><div id="monthView" class="card" style="display:none"><div class="scroller"><div class="monthGrid" id="monthGrid"></div></div></div><div id="teamsView" class="card" style="display:none"><div class="teamTop"><h2 class="sectionTitle" id="teamsTitle" style="margin:0">Team schedule</h2><select id="teamSelect" onchange="renderTeams()"></select></div><div class="teamStats" id="teamStats"></div><div class="scroller"><table class="table" id="teamSchedule"></table></div></div><div class="kpis"><div class="kpi"><span id="kDue">Amount due</span><strong id="dueTotal"></strong></div><div class="kpi"><span id="kPaid">Received</span><strong id="paidTotal"></strong></div><div class="kpi"><span id="kBalance">Outstanding</span><strong id="balanceTotal"></strong></div><div class="kpi"><span id="kTrain">Trainings</span><strong id="trainingTotal"></strong></div></div><div class="grid2"><div class="card"><h2 class="sectionTitle" id="teamTitle">Team financial summary</h2><div class="scroller"><table class="table" id="teamTable"></table></div></div><div class="card"><h2 class="sectionTitle" id="payTitle">Payments</h2><div class="scroller"><table class="table" id="paymentTable"></table></div><div class="small" id="payNote">Payments are updated from data you provide in ChatGPT.</div></div></div><div class="card"><h2 class="sectionTitle" id="bookTitle">Bookings on selected day</h2><div class="scroller"><table class="table" id="bookingTable"></table></div></div></div><script>const CFG=[['KOREA FC','2027-01-04','2027-02-01'],['Radomiak','2027-01-10','2027-01-20'],['Bruk BET','2027-01-10','2027-01-20'],['ARKA Gdynia','2027-01-17','2027-01-27'],['Grodzisk FC','2027-01-20','2027-01-27']];const TRAIN=['10:30–12:00','16:00–17:30'],ROWS=['08:30–10:00','10:30–12:00','12:00–13:30','14:00–15:30','16:00–17:30'],P=[1,2,3,4,5,6];function mk(){const o=new Set,b=[];for(const [team,s,e] of CFG){for(let d=new Date(s+'T12:00:00'),z=new Date(e+'T12:00:00');d<=z;d.setDate(d.getDate()+1)){const ds=d.toISOString().slice(0,10);for(const t of TRAIN){let p=1;while(o.has(ds+'|'+p+'|'+t))p++;o.add(ds+'|'+p+'|'+t);b.push({date:ds,pitch:p,time:t,team})}}}return b}const BOOKINGS=mk();function esc(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}const RATE=300,PAYMENTS=[];let LANG='en',MODE='day';const T={en:{season:'Admin dashboard · 10 Dec 2026 – 30 Apr 2027',badge:'ADMIN · FINANCE + BOOKINGS',day:'Day',month:'Month',teams:'Teams',free:'Available',booked:'Booked',time:'Time',pitch:'Pitch',team:'Team',status:'Status',training:'Training',due:'Amount due',paid:'Received',balance:'Outstanding',trains:'Trainings',teamTitle:'Team financial summary',payTitle:'Payments',payNote:'Payments are updated from data you provide in ChatGPT.',bookTitle:'Bookings on selected day',date:'Date',amount:'Amount',note:'Note',none:'No payments yet',months:['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],weekdays:['Mon','Tue','Wed','Thu','Fri','Sat','Sun'],allFree:'All available',slots:'bookings',occupied:'occupied',teamSched:'Team schedule',period:'Period',days:'Training days',total:'Total trainings',perDay:'Trainings/day'},pl:{season:'Panel administracyjny · 10.12.2026 – 30.04.2027',badge:'ADMIN · FINANSE + REZERWACJE',day:'Dzień',month:'Miesiąc',teams:'Drużyny',free:'Wolne',booked:'Zarezerwowane',time:'Godzina',pitch:'Boisko',team:'Drużyna',status:'Status',training:'Trening',due:'Należności',paid:'Wpłacono',balance:'Pozostało',trains:'Treningi',teamTitle:'Podsumowanie finansowe drużyn',payTitle:'Wpłaty',payNote:'Wpłaty aktualizuję na podstawie danych, które podajesz mi w ChatGPT.',bookTitle:'Rezerwacje w wybranym dniu',date:'Data',amount:'Kwota',note:'Uwagi',none:'Brak wpłat',months:['sty','lut','mar','kwi','maj','cze','lip','sie','wrz','paź','lis','gru'],weekdays:['Pon','Wt','Śr','Czw','Pt','Sob','Niedz'],allFree:'Wszystko wolne',slots:'rezerwacji',occupied:'zajętych',teamSched:'Harmonogram drużyny',period:'Okres',days:'Dni treningowe',total:'Liczba treningów',perDay:'Treningów/dzień'}};function money(n){return new Intl.NumberFormat(LANG==='pl'?'pl-PL':'en-IE',{style:'currency',currency:'EUR'}).format(n||0)}function summaries(){return CFG.map(c=>c[0]).map(team=>{const bs=BOOKINGS.filter(b=>b.team===team),due=bs.length*RATE,paid=PAYMENTS.filter(p=>p.team===team).reduce((s,p)=>s+Number(p.amount||0),0);return{team,count:bs.length,due,paid,balance:due-paid}})}function setLang(l){LANG=l;enBtn.classList.toggle('active',l==='en');plBtn.classList.toggle('active',l==='pl');seasonText.textContent=T[l].season;badge.textContent=T[l].badge;dayBtn.textContent=T[l].day;monthBtn.textContent=T[l].month;teamsBtn.textContent=T[l].teams;freeLegend.textContent=T[l].free;bookedLegend.textContent=T[l].booked;kDue.textContent=T[l].due;kPaid.textContent=T[l].paid;kBalance.textContent=T[l].balance;kTrain.textContent=T[l].trains;teamTitle.textContent=T[l].teamTitle;payTitle.textContent=T[l].payTitle;payNote.textContent=T[l].payNote;bookTitle.textContent=T[l].bookTitle;teamsTitle.textContent=T[l].teamSched;render()}function setMode(m){MODE=m;for(const x of ['day','month','teams'])document.getElementById(x+'Btn').classList.toggle('active',m===x);dayView.style.display=m==='day'?'block':'none';monthView.style.display=m==='month'?'block':'none';teamsView.style.display=m==='teams'?'block':'none';date.style.display=m==='teams'?'none':'';prevBtn.style.display=m==='teams'?'none':'';nextBtn.style.display=m==='teams'?'none':'';render()}function move(n){const d=new Date(date.value+'T12:00:00');MODE==='month'?d.setMonth(d.getMonth()+n):d.setDate(d.getDate()+n);date.value=d.toISOString().slice(0,10);render()}function render(){const s=summaries(),due=s.reduce((a,x)=>a+x.due,0),paid=s.reduce((a,x)=>a+x.paid,0);dueTotal.textContent=money(due);paidTotal.textContent=money(paid);balanceTotal.textContent=money(due-paid);trainingTotal.textContent=BOOKINGS.length;renderTeam(s);renderPayments();MODE==='day'?renderDay():MODE==='month'?renderMonth():renderTeams();renderBookingTable()}function renderTeam(s){const x=T[LANG];let h=`<thead><tr><th>${x.team}</th><th>${x.trains}</th><th>${x.due}</th><th>${x.paid}</th><th>${x.balance}</th></tr></thead><tbody>`;for(const r of s)h+=`<tr><td data-label="${x.team}"><strong>${esc(r.team)}</strong></td><td data-label="${x.trains}">${r.count}</td><td data-label="${x.due}">${money(r.due)}</td><td data-label="${x.paid}" class="paid">${money(r.paid)}</td><td data-label="${x.balance}" class="due">${money(r.balance)}</td></tr>`;teamTable.innerHTML=h+'</tbody>'}function renderPayments(){const x=T[LANG];let h=`<thead><tr><th>${x.date}</th><th>${x.team}</th><th>${x.amount}</th><th>${x.note}</th></tr></thead><tbody>`;if(!PAYMENTS.length)h+=`<tr><td colspan="4">${x.none}</td></tr>`;else for(const p of PAYMENTS.slice().sort((a,b)=>b.date.localeCompare(a.date)))h+=`<tr><td data-label="${x.date}">${p.date}</td><td data-label="${x.team}"><strong>${esc(p.team)}</strong></td><td data-label="${x.amount}" class="paid">${money(p.amount)}</td><td data-label="${x.note}">${esc(p.note||'')}</td></tr>`;paymentTable.innerHTML=h+'</tbody>'}function renderDay(){const x=T[LANG],ds=date.value,day=BOOKINGS.filter(b=>b.date===ds),map=new Map(day.map(b=>[b.pitch+'|'+b.time,b]));let h='<thead><tr><th>'+x.time+'</th>'+P.map(p=>`<th>${x.pitch} ${p}</th>`).join('')+'</tr></thead><tbody>';for(const t of ROWS){h+=`<tr><th>${t}</th>`;for(const p of P){const b=map.get(p+'|'+t);h+=b?`<td class="booked"><strong>${esc(b.team)}</strong><span>${x.training}</span></td>`:`<td class="free"><strong>${x.free}</strong></td>`}h+='</tr>'}schedule.innerHTML=h+'</tbody>';mobileDay.innerHTML=ROWS.map(t=>`<div class="mSlot"><div class="mSlotTitle">${t}</div><div class="mRows">${P.map(p=>{const b=map.get(p+'|'+t);return b?`<div class="mPitch booked"><strong>${x.pitch} ${p} · ${esc(b.team)}</strong><span>${x.training}</span></div>`:`<div class="mPitch free"><strong>${x.pitch} ${p}</strong><span>${x.free}</span></div>`}).join('')}</div></div>`).join('')}function renderMonth(){const x=T[LANG],s=new Date(date.value+'T12:00:00'),y=s.getFullYear(),m=s.getMonth(),f=new Date(y,m,1),off=(f.getDay()+6)%7,g=new Date(y,m,1-off);let h='';for(const w of x.weekdays)h+=`<div class="monthHead">${w}</div>`;for(let i=0;i<42;i++){const d=new Date(g);d.setDate(g.getDate()+i);const ds=d.toISOString().slice(0,10),day=BOOKINGS.filter(b=>b.date===ds),pitches=[...new Set(day.map(b=>b.pitch))],items=day.sort((a,b)=>a.time.localeCompare(b.time)||a.pitch-b.pitch).map(b=>`<div class="dayTag"><strong>${esc(b.team)}</strong><span>${x.pitch} ${b.pitch} · ${b.time}</span></div>`).join('');h+=`<div class="dayCell ${d.getMonth()===m?'':'out'}" onclick="date.value='${ds}';setMode('day')"><div class="dayNum"><span class="num">${d.getDate()}</span><span class="mon">${x.months[d.getMonth()]}</span></div>${day.length?`<div class="dayStat"><strong>${day.length}</strong> ${x.slots}</div><div class="dayStat">${pitches.length}/6 ${x.occupied}</div><div class="dayClubs">${items}</div>`:`<div class="dayFree">${x.allFree}</div>`}</div>`}monthGrid.innerHTML=h}function renderTeams(){const x=T[LANG];if(!teamSelect.options.length)teamSelect.innerHTML=CFG.map(c=>`<option>${esc(c[0])}</option>`).join('');const team=teamSelect.value||CFG[0][0],bs=BOOKINGS.filter(b=>b.team===team),dates=[...new Set(bs.map(b=>b.date))];teamStats.innerHTML=`<div class="teamStat"><span>${x.period}</span><strong>${dates[0]} – ${dates[dates.length-1]}</strong></div><div class="teamStat"><span>${x.days}</span><strong>${dates.length}</strong></div><div class="teamStat"><span>${x.total}</span><strong>${bs.length}</strong></div>`;let h=`<thead><tr><th>${x.date}</th><th>${x.perDay}</th><th>${x.time}</th><th>${x.pitch}</th></tr></thead><tbody>`;for(const ds of dates){const day=bs.filter(b=>b.date===ds).sort((a,b)=>a.time.localeCompare(b.time));h+=`<tr><td data-label="${x.date}"><strong>${ds}</strong></td><td data-label="${x.perDay}">${day.length}</td><td data-label="${x.time}">${day.map(b=>b.time).join('<br>')}</td><td data-label="${x.pitch}">${day.map(b=>x.pitch+' '+b.pitch).join('<br>')}</td></tr>`}teamSchedule.innerHTML=h+'</tbody>'}function renderBookingTable(){const x=T[LANG],day=BOOKINGS.filter(b=>b.date===date.value).sort((a,b)=>a.time.localeCompare(b.time)||a.pitch-b.pitch);let h=`<thead><tr><th>${x.time}</th><th>${x.pitch}</th><th>${x.team}</th><th>${x.due}</th></tr></thead><tbody>`;if(!day.length)h+=`<tr><td colspan="4">—</td></tr>`;else for(const b of day)h+=`<tr><td data-label="${x.time}">${b.time}</td><td data-label="${x.pitch}">${x.pitch} ${b.pitch}</td><td data-label="${x.team}"><strong>${esc(b.team)}</strong></td><td data-label="${x.due}">${money(RATE)}</td></tr>`;bookingTable.innerHTML=h+'</tbody>'}render();</script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Football World Antalya – Admin</title>
+<style>
+:root{
+  --navy:#10365d; --navy2:#1a4774; --green:#dff5e3; --greenText:#166534;
+  --orange:#ffe7c2; --orangeText:#9a4b00; --card:#ffffff; --bg:#f4f7fa;
+  --border:#d9e3ec; --muted:#6b7b8c; --soft:#eef3f7; --red:#fee2e2; --redText:#991b1b;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:#17273a}
+.header{background:linear-gradient(90deg,var(--navy),var(--navy2));color:#fff;padding:18px 22px;display:flex;justify-content:space-between;align-items:center;gap:12px;position:sticky;top:0;z-index:20}
+.brand{display:flex;align-items:center;gap:12px}
+.brand h1{margin:0;font-size:24px;letter-spacing:.02em}
+.brand p{margin:4px 0 0;font-size:13px;opacity:.85}
+.actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.lang button,.mode button,.toolbar button,.seg button{border:1px solid var(--border);border-radius:9px;background:#fff;color:var(--navy);padding:9px 12px;font-weight:700;cursor:pointer}
+.header .lang button{border-color:rgba(255,255,255,.45);background:transparent;color:#fff}
+.lang button.active{background:#fff;color:var(--navy)}
+.badge{background:#fff;color:var(--navy);padding:9px 14px;border-radius:999px;font-weight:700;font-size:13px}
+.wrap{max-width:1500px;margin:auto;padding:16px}
+.toolbar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:14px}
+.toolbar input,.toolbar select{font:inherit;border:1px solid var(--border);border-radius:8px;padding:9px 10px;background:#fff}
+.mode button.active,.seg button.active{background:var(--navy);color:#fff}
+.legend{margin-left:auto;display:flex;gap:14px;align-items:center;font-size:12px;color:var(--muted)}
+.dot{width:14px;height:14px;border-radius:4px;display:inline-block;margin-right:4px;vertical-align:middle}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;box-shadow:0 4px 18px rgba(16,54,93,.06);padding:12px}
+.card + .card{margin-top:14px}
+.scroller{overflow:auto}
+table.schedule{width:100%;min-width:980px;border-collapse:separate;border-spacing:4px}
+.schedule th{background:var(--soft);color:var(--navy);padding:10px;border-radius:8px;font-size:12px}
+.schedule thead th:not(:first-child){background:var(--navy);color:#fff}
+.schedule td{padding:7px;height:58px;text-align:center;border-radius:8px;font-size:12px}
+.free{background:var(--green);color:var(--greenText)}
+.booked{background:var(--red);color:var(--redText)}
+.partial{background:var(--orange);color:var(--orangeText)}
+.schedule td strong,.schedule td span{display:block}
+.schedule td span{font-size:10px;margin-top:3px;opacity:.9}
+.sectionTitle{font-size:21px;color:var(--navy);margin:18px 0 10px}
+.list{width:100%;border-collapse:collapse}
+.list th,.list td{padding:10px;border-bottom:1px solid var(--border);font-size:12px;text-align:left}
+.list th{background:var(--soft);color:var(--navy)}
+.status{display:inline-block;padding:4px 8px;border-radius:999px;background:var(--red);color:var(--redText);font-weight:700}
+.note{font-size:12px;color:var(--muted)}
+.monthGrid{display:grid;grid-template-columns:repeat(7,minmax(150px,1fr));gap:8px;min-width:1100px}
+.monthHead{font-size:12px;font-weight:700;color:var(--navy);background:var(--soft);padding:10px;border-radius:8px;text-align:center}
+.dayCell{min-height:175px;border:1px solid var(--border);border-radius:12px;padding:8px;background:#fff;cursor:pointer}
+.dayCell.out{opacity:.35}
+.dayTop{display:flex;justify-content:space-between;align-items:flex-start;gap:6px;margin-bottom:8px}
+.dayNum{font-weight:700;color:var(--navy)}
+.dayNum .n{font-size:20px;line-height:1}
+.dayNum .m{font-size:11px;color:var(--muted);text-transform:uppercase}
+.dayMeta{font-size:10px;color:var(--muted);text-align:right}
+.slotPills{display:flex;flex-direction:column;gap:5px}
+.slotPill{border-radius:8px;padding:6px 7px;font-size:10px;font-weight:700;line-height:1.25}
+.slotPill.free{background:var(--green);color:var(--greenText)}
+.slotPill.partial{background:var(--orange);color:var(--orangeText)}
+.slotPill.booked{background:var(--red);color:var(--redText)}
+.pitchNote{font-size:10px;color:var(--muted);margin-top:6px}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.kpi{background:#fff;border:1px solid var(--border);border-radius:14px;padding:14px}
+.kpi span{display:block;font-size:12px;color:var(--muted);margin-bottom:6px}
+.kpi strong{font-size:20px;color:var(--navy)}
+.teamCards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}
+.teamCard{border:1px solid var(--border);border-radius:12px;background:#fff;padding:12px}
+.teamCard h3{margin:0 0 6px;color:var(--navy);font-size:18px}
+.dayRow{display:flex;justify-content:space-between;gap:8px;padding:8px 0;border-bottom:1px solid var(--border);font-size:12px}
+.dayRow:last-child{border-bottom:0}
+.empty{padding:20px;text-align:center;color:var(--muted)}
+.panelGrid{display:grid;grid-template-columns:1.5fr 1fr;gap:14px}
+.small{font-size:11px;color:var(--muted)}
+@media (max-width:1100px){
+  .panelGrid{grid-template-columns:1fr}
+  .kpis{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:760px){
+  .header{align-items:flex-start;flex-direction:column}
+  .legend{margin-left:0}
+  .wrap{padding:10px}
+  .kpis{grid-template-columns:1fr}
+  .monthGrid{grid-template-columns:1fr;min-width:0}
+  .dayCell{min-height:auto}
+  table.schedule{display:none}
+  .mobileDay{display:flex!important;flex-direction:column;gap:8px}
+  .mobileSlot{border:1px solid var(--border);border-radius:10px;padding:8px;background:#fff}
+  .mobileSlot h4{margin:0 0 6px;color:var(--navy);font-size:13px}
+  .mobileEntries{display:flex;flex-direction:column;gap:6px}
+  .entry{border-radius:8px;padding:6px 8px;font-size:12px}
+  .entry.free{background:var(--green);color:var(--greenText)}
+  .entry.booked{background:var(--red);color:var(--redText)}
+}
+.mobileDay{display:none}</style>
+</head>
+<body>
+<div class="header">
+  <div class="brand">
+    <div style="font-size:34px">⚽</div>
+    <div>
+      <h1>FOOTBALL WORLD ANTALYA</h1>
+      <p id="seasonText">Pitch availability · 10 Dec 2026 – 30 Apr 2027</p>
+    </div>
+  </div>
+  <div class="actions">
+    <div class="lang"><button id="enBtn">EN</button><button id="plBtn">PL</button></div>
+    <div class="badge" id="topBadge">ADMIN · EDIT OFFLINE</div>
+  </div>
+</div>
+<div class="wrap">
+  <div class="toolbar">
+    <div class="mode">
+      <button id="dayBtn" onclick="setMode('day')">Day</button>
+      <button id="monthBtn" onclick="setMode('month')">Month</button>
+      <button id="teamsBtn" onclick="setMode('teams')">Teams</button>
+    </div>
+    <button onclick="moveDate(-1)">←</button>
+    <input id="datePicker" type="date" min="2026-12-10" max="2027-04-30" value="2027-01-20" onchange="render()">
+    <button onclick="moveDate(1)">→</button>
+    <div class="seg">
+      <span id="pitchFilterLabel" class="small">Pitch filter:</span>
+      <select id="pitchFilter"><option value="all">All pitches</option></select>
+    </div>
+    <div class="legend">
+      <span><i class="dot" style="background:var(--green)"></i><span id="freeLegend">Available</span></span>
+      <span><i class="dot" style="background:var(--orange)"></i><span>1–5/6</span></span>
+      <span><i class="dot" style="background:var(--red)"></i><span id="bookedLegend">Booked</span></span>
+    </div>
+  </div>
+
+  <div id="dayView">
+    <div class="card">
+      <div class="scroller"><table class="schedule" id="schedule"></table></div>
+      <div class="mobileDay" id="mobileDay"></div>
+      <div class="note" id="freeNote">Remaining time periods are automatically shown as available.</div>
+    </div>
+    <h2 class="sectionTitle" id="listTitle"></h2>
+    <div class="card"><div class="scroller"><table class="list" id="listTable"></table></div></div>
+  </div>
+
+  <div id="monthView" style="display:none">
+    <div class="card"><div class="scroller"><div class="monthGrid" id="monthGrid"></div></div></div>
+  </div>
+
+  <div id="teamsView" style="display:none">
+    <h2 class="sectionTitle">Team overview</h2>
+    <div class="teamCards" id="teamsGrid"></div>
+  </div>
+
+  <div class="card" style="margin-top:16px">
+    <div class="kpis">
+      <div class="kpi"><span id="kpiDueLabel">Amount due</span><strong id="kpiDue">€0.00</strong></div>
+      <div class="kpi"><span id="kpiRecLabel">Received</span><strong id="kpiRec">€0.00</strong></div>
+      <div class="kpi"><span id="kpiOutLabel">Outstanding</span><strong id="kpiOut">€0.00</strong></div>
+      <div class="kpi"><span id="kpiTraLabel">Trainings</span><strong id="kpiTra">0</strong></div>
+    </div>
+  </div>
+
+  <div class="panelGrid" style="margin-top:14px">
+    <div class="card">
+      <h2 class="sectionTitle" id="adminPanelsTitle" style="margin-top:0">Team financial summary</h2>
+      <div class="scroller"><table class="list" id="teamSummaryTable"></table></div>
+    </div>
+    <div class="card">
+      <h2 class="sectionTitle" id="paymentsTitle" style="margin-top:0">Payments</h2>
+      <div class="scroller"><table class="list" id="paymentsTable"></table></div>
+      <div class="note">Payments are updated from data you provide in ChatGPT.</div>
+    </div>
+  </div>
+</div>
+<script>
+const RATE=300;
+const CFG=[['KOREA FC','2027-01-04','2027-02-01'],['Radomiak','2027-01-10','2027-01-20'],['Bruk BET','2027-01-10','2027-01-20'],['ARKA Gdynia','2027-01-17','2027-01-27'],['Grodzisk FC','2027-01-20','2027-01-27']];
+const TRAIN=['10:30–12:00','16:00–17:30'];
+const SLOTS=['08:30–10:00','10:30–12:00','12:00–13:30','14:00–15:30','16:00–17:30'];
+const PITCHES=[1,2,3,4,5,6];
+function mk(){const o=new Set,b=[];for(const [team,start,end] of CFG){for(let d=new Date(start+'T12:00:00'),z=new Date(end+'T12:00:00');d<=z;d.setDate(d.getDate()+1)){const ds=d.toISOString().slice(0,10);for(const time of TRAIN){let pitch=1;while(o.has(ds+'|'+pitch+'|'+time))pitch++;o.add(ds+'|'+pitch+'|'+time);b.push({date:ds,pitch,time,team,status:'Booked',note:'Training',amountDue:RATE,amountPaid:0});}}}return b;}
+const BOOKINGS=mk();
+const PAYMENTS=[];
+const TEAM_SUMMARY=Object.fromEntries(CFG.map(c=>{const team=c[0],rows=BOOKINGS.filter(b=>b.team===team);return [team,{trainings:rows.length,due:rows.length*RATE,paid:0}];}));
+let LANG='en';
+let MODE='day';
+let PITCH_FILTER='all';
+
+const T = {
+  en:{
+    season:'Pitch availability · 10 Dec 2026 – 30 Apr 2027',
+    badge:'ADMIN · EDIT OFFLINE',
+    day:'Day', month:'Month', teams:'Teams',
+    free:'Available', booked:'Booked', partial:'Partly booked',
+    time:'Time', pitch:'Pitch', team:'Team', status:'Status', notes:'Notes',
+    training:'Training', noBookings:'No bookings on this day.',
+    reservations:'Bookings',
+    freeNote:'Remaining time periods are automatically shown as available.',
+    weekdays:['Mon','Tue','Wed','Thu','Fri','Sat','Sun'],
+    months:['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+    pitchAll:'All pitches', occupied:'occupied', of:'of', slots:'slots',
+    everyDay:'training days', sessions:'sessions', stay:'Stay',
+    due:'Amount due', received:'Received', outstanding:'Outstanding', trainings:'Trainings',
+    payments:'Payments', noPayments:'No payments yet', teamSummary:'Team financial summary',
+    teamView:'Team overview', selectPitch:'Pitch filter'
+  },
+  pl:{
+    season:'Dostępność boisk · 10.12.2026 – 30.04.2027',
+    badge:'ADMIN · TRYB PODGLĄDU',
+    day:'Dzień', month:'Miesiąc', teams:'Drużyny',
+    free:'Wolne', booked:'Zajęte', partial:'Częściowo zajęte',
+    time:'Godzina', pitch:'Boisko', team:'Drużyna', status:'Status', notes:'Uwagi',
+    training:'Trening', noBookings:'Brak rezerwacji w tym dniu.',
+    reservations:'Rezerwacje',
+    freeNote:'Pozostałe godziny są automatycznie pokazywane jako wolne.',
+    weekdays:['Pon','Wt','Śr','Czw','Pt','Sob','Niedz'],
+    months:['sty','lut','mar','kwi','maj','cze','lip','sie','wrz','paź','lis','gru'],
+    pitchAll:'Wszystkie boiska', occupied:'zajęte', of:'z', slots:'slotów',
+    everyDay:'dni treningowych', sessions:'treningów', stay:'Pobyt',
+    due:'Należności', received:'Wpłacono', outstanding:'Pozostało', trainings:'Treningi',
+    payments:'Wpłaty', noPayments:'Brak wpłat', teamSummary:'Podsumowanie drużyn',
+    teamView:'Widok drużyn', selectPitch:'Filtr boiska'
+  }
+};
+
+function esc(s){
+  return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+}
+function money(n) {
+  return new Intl.NumberFormat('en-IE', {style:'currency', currency:'EUR'}).format(Number(n||0));
+}
+function fmtDatePL(ds) {
+  const [y,m,d]=ds.split('-'); return `${d}.${m}.${y}`;
+}
+function setLang(lang){
+  LANG=lang;
+  document.getElementById('enBtn').classList.toggle('active', lang==='en');
+  document.getElementById('plBtn').classList.toggle('active', lang==='pl');
+  const tx=T[LANG];
+  seasonText.textContent=tx.season;
+  topBadge.textContent=tx.badge;
+  dayBtn.textContent=tx.day; monthBtn.textContent=tx.month; teamsBtn.textContent=tx.teams;
+  freeLegend.textContent=tx.free; bookedLegend.textContent=tx.booked;
+  pitchFilterLabel.textContent=tx.selectPitch + ':';
+  freeNote.textContent=tx.freeNote;
+  pitchFilter.options[0].text = tx.pitchAll;
+  render();
+}
+function setMode(mode){
+  MODE=mode;
+  ['day','month','teams'].forEach(m=>document.getElementById(m+'Btn').classList.toggle('active', m===mode));
+  dayView.style.display = mode==='day' ? 'block':'none';
+  monthView.style.display = mode==='month' ? 'block':'none';
+  teamsView.style.display = mode==='teams' ? 'block':'none';
+  render();
+}
+function moveDate(n){
+  const el=datePicker;
+  const d=new Date(el.value+'T12:00:00');
+  if(MODE==='month') d.setMonth(d.getMonth()+n); else d.setDate(d.getDate()+n);
+  el.value=d.toISOString().slice(0,10);
+  render();
+}
+function dayBookings(ds){
+  return BOOKINGS.filter(b=>b.date===ds);
+}
+function render(){
+  if(MODE==='day') renderDay();
+  if(MODE==='month') renderMonth();
+  if(MODE==='teams') renderTeams();
+  renderAdminPanels();
+}
+function renderDay(){
+  const tx=T[LANG];
+  const ds=datePicker.value;
+  const day=dayBookings(ds);
+  const map=new Map(day.map(b=>[`${b.pitch}|${b.time}`, b]));
+  let th='<thead><tr><th>'+tx.time+'</th>'+PITCHES.map(p=>`<th>${tx.pitch} ${p}</th>`).join('')+'</tr></thead><tbody>';
+  for(const s of SLOTS){
+    th += `<tr><th>${s}</th>`;
+    for(const p of PITCHES){
+      const b = map.get(`${p}|${s}`);
+      th += b
+        ? `<td class="booked"><strong>${esc(b.team)}</strong><span>${tx.training}</span></td>`
+        : `<td class="free"><strong>${tx.free}</strong></td>`;
+    }
+    th += '</tr>';
+  }
+  th += '</tbody>';
+  schedule.innerHTML = th;
+
+  let mobile='';
+  for(const s of SLOTS){
+    const entries=[];
+    for(const p of PITCHES){
+      const b = map.get(`${p}|${s}`);
+      entries.push(b
+        ? `<div class="entry booked">${tx.pitch} ${p} · <strong>${esc(b.team)}</strong></div>`
+        : `<div class="entry free">${tx.pitch} ${p} · ${tx.free}</div>`);
+    }
+    mobile += `<div class="mobileSlot"><h4>${s}</h4><div class="mobileEntries">${entries.join('')}</div></div>`;
+  }
+  mobileDay.innerHTML = mobile;
+
+  listTitle.textContent = tx.reservations + ' — ' + fmtDatePL(ds);
+  let l=`<thead><tr><th>${tx.time}</th><th>${tx.pitch}</th><th>${tx.team}</th><th>${tx.status}</th><th>${tx.notes}</th></tr></thead><tbody>`;
+  if(!day.length) l += `<tr><td colspan="5" class="empty">${tx.noBookings}</td></tr>`;
+  else for(const b of day.sort((a,b)=>a.time.localeCompare(b.time)||a.pitch-b.pitch)){
+    l += `<tr><td>${esc(b.time)}</td><td>${tx.pitch} ${b.pitch}</td><td><strong>${esc(b.team)}</strong></td><td><span class="status">${tx.booked}</span></td><td>${tx.training}</td></tr>`;
+  }
+  l += '</tbody>';
+  listTable.innerHTML = l;
+}
+function slotState(ds, slot, pitchFilter){
+  const slotBookings = dayBookings(ds)
+    .filter(b => b.time===slot)
+    .sort((a,b)=>a.pitch-b.pitch);
+
+  if(pitchFilter==='all'){
+    const count = slotBookings.length;
+    return {
+      count,
+      total:6,
+      cls: count===0 ? 'free' : (count===6 ? 'booked' : 'partial'),
+      bookings: slotBookings
+    };
+  }
+
+  const p = Number(pitchFilter);
+  const booking = slotBookings.find(b=>b.pitch===p) || null;
+  return {
+    count: booking ? 1 : 0,
+    total:1,
+    cls: booking ? 'booked' : 'free',
+    booking
+  };
+}
+function renderMonth(){
+  const tx=T[LANG];
+  const selected = new Date(datePicker.value+'T12:00:00');
+  const y=selected.getFullYear(), m=selected.getMonth();
+  const first = new Date(y,m,1);
+  const offset = (first.getDay()+6)%7;
+  const gridStart = new Date(y,m,1-offset);
+  let html='';
+  for(const wd of tx.weekdays) html += `<div class="monthHead">${wd}</div>`;
+  for(let i=0;i<42;i++){
+    const d=new Date(gridStart); d.setDate(gridStart.getDate()+i);
+    const ds=d.toISOString().slice(0,10);
+    const inMonth=d.getMonth()===m;
+    const totalBookings = dayBookings(ds).length;
+    const activePitches = new Set(dayBookings(ds).map(b=>b.pitch)).size;
+    const pills = SLOTS.map(slot => {
+      const st = slotState(ds, slot, PITCH_FILTER);
+
+      if(PITCH_FILTER==='all'){
+        if(st.count===0){
+          return `<div class="slotPill free"><strong>${slot}</strong> · ${tx.free}</div>`;
+        }
+
+        const teams = st.bookings
+          .map(b => `${esc(b.team)} – ${tx.pitch} ${b.pitch}`)
+          .join('<br>');
+
+        return `<div class="slotPill ${st.cls}">
+          <strong>${slot} · ${st.count}/6 ${tx.occupied}</strong>
+          <div style="margin-top:3px;font-weight:400;line-height:1.3">${teams}</div>
+        </div>`;
+      }
+
+      if(!st.booking){
+        return `<div class="slotPill free"><strong>${slot}</strong> · ${tx.free}</div>`;
+      }
+
+      return `<div class="slotPill booked">
+        <strong>${slot} · ${esc(st.booking.team)}</strong>
+        <div style="margin-top:3px;font-weight:400">${tx.pitch} ${st.booking.pitch}</div>
+      </div>`;
+    }).join('');
+    html += `<div class="dayCell ${inMonth?'':'out'}" onclick="openDay('${ds}')">
+      <div class="dayTop">
+        <div class="dayNum"><div class="n">${d.getDate()}</div><div class="m">${tx.months[d.getMonth()]}</div></div>
+        <div class="dayMeta">${totalBookings} ${tx.slots}<br>${activePitches}/6 ${tx.occupied}</div>
+      </div>
+      <div class="slotPills">${pills}</div>
+      <div class="pitchNote">${PITCH_FILTER==='all' ? tx.pitchAll : tx.pitch+' '+PITCH_FILTER}</div>
+    </div>`;
+  }
+  monthGrid.innerHTML = html;
+}
+function openDay(ds){
+  datePicker.value = ds;
+  setMode('day');
+}
+function renderTeams(){
+  const tx=T[LANG];
+  const byTeam = {};
+  for(const b of BOOKINGS){
+    byTeam[b.team] ||= [];
+    byTeam[b.team].push(b);
+  }
+  const cards = Object.entries(byTeam).map(([team, rows]) => {
+    rows.sort((a,b)=>a.date.localeCompare(b.date)||a.time.localeCompare(b.time));
+    const dateMap = {};
+    rows.forEach(r => {
+      dateMap[r.date] ||= [];
+      dateMap[r.date].push(r);
+    });
+    const dates = Object.keys(dateMap).sort();
+    const start = dates[0], end = dates[dates.length-1];
+    const body = dates.map(ds => {
+      const items = dateMap[ds].sort((a,b)=>a.time.localeCompare(b.time)||a.pitch-b.pitch);
+      const times = items.map(x => `${x.time} (${tx.pitch} ${x.pitch})`).join(' · ');
+      return `<div class="dayRow"><div><strong>${fmtDatePL(ds)}</strong></div><div>${items.length} × ${tx.training}<br><span class="small">${times}</span></div></div>`;
+    }).join('');
+    return `<div class="teamCard">
+      <h3>${esc(team)}</h3>
+      <div class="small">${tx.stay}: ${fmtDatePL(start)} – ${fmtDatePL(end)} · ${dates.length} ${tx.everyDay} · ${rows.length} ${tx.sessions}</div>
+      <div style="margin-top:10px">${body}</div>
+    </div>`;
+  }).join('');
+  teamsGrid.innerHTML = cards || `<div class="empty">—</div>`;
+}
+
+function renderAdminPanels(){
+  const tx=T[LANG];
+  const totalDue = BOOKINGS.reduce((s,b)=>s+Number(b.amountDue||0),0);
+  const totalPaid = PAYMENTS.reduce((s,p)=>s+Number(p.amount||0),0);
+  const totalTrain = BOOKINGS.length;
+
+  kpiDueLabel.textContent = tx.due;
+  kpiRecLabel.textContent = tx.received;
+  kpiOutLabel.textContent = tx.outstanding;
+  kpiTraLabel.textContent = tx.trainings;
+  kpiDue.textContent = money(totalDue);
+  kpiRec.textContent = money(totalPaid);
+  kpiOut.textContent = money(totalDue-totalPaid);
+  kpiTra.textContent = totalTrain;
+
+  adminPanelsTitle.textContent = tx.teamSummary;
+  paymentsTitle.textContent = tx.payments;
+
+  const rows = Object.entries(TEAM_SUMMARY).map(([team, v])=>{
+    const paid = PAYMENTS.filter(p=>p.team===team).reduce((s,p)=>s+Number(p.amount||0),0);
+    return `<tr>
+      <td><strong>${esc(team)}</strong></td>
+      <td>${v.trainings}</td>
+      <td>${money(v.due)}</td>
+      <td>${money(paid)}</td>
+      <td>${money(v.due-paid)}</td>
+    </tr>`;
+  }).join('');
+  teamSummaryTable.innerHTML = `<thead><tr>
+    <th>${tx.team}</th><th>${tx.trainings}</th><th>${tx.due}</th><th>${tx.received}</th><th>${tx.outstanding}</th>
+  </tr></thead><tbody>${rows}</tbody>`;
+
+  const payRows = PAYMENTS.length
+    ? PAYMENTS.map(p=>`<tr><td>${fmtDatePL(p.date)}</td><td>${esc(p.team)}</td><td>${money(p.amount)}</td><td>${esc(p.note||'')}</td></tr>`).join('')
+    : `<tr><td colspan="4" class="empty">${tx.noPayments}</td></tr>`;
+  paymentsTable.innerHTML = `<thead><tr>
+    <th>Date</th><th>${tx.team}</th><th>Amount</th><th>${tx.notes}</th>
+  </tr></thead><tbody>${payRows}</tbody>`;
+}
+
+document.addEventListener('DOMContentLoaded', ()=>{
+  document.getElementById('enBtn').onclick=()=>setLang('en');
+  document.getElementById('plBtn').onclick=()=>setLang('pl');
+  for(let p=1;p<=6;p++) {
+    const opt=document.createElement('option');
+    opt.value=String(p); opt.textContent='Pitch '+p;
+    pitchFilter.appendChild(opt);
+  }
+  pitchFilter.addEventListener('change', ()=>{ PITCH_FILTER = pitchFilter.value; renderMonth(); });
+  setLang('en');
+  setMode('day');
+});
+</script>
+</body></html>
